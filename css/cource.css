@@ -1,0 +1,84 @@
+.course-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    /* align-items: center; */ /* Center vertically */
+    position: relative;
+    width: fit-content; /* Ensure positioning for vertical line */
+    margin: auto; /* Center horizontally */
+}
+
+.course-accordion {
+    flex: 1;
+}
+
+.course-accordion-item {
+    position: relative;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: box-shadow 0.3s; /* Smooth transition */
+}
+
+.course-accordion-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.course-chapter-title {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.course-toggle-btn {
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.course-chapter-title:hover {
+    background-color: #f0f0f0;
+}
+
+.course-accordion-content {
+    padding-left: 20px;
+    display: none;
+}
+
+.course-accordion-content.active {
+    display: block;
+}
+
+.course-accordion-item input[type="checkbox"] {
+    display: none;
+}
+
+/* Pseudo-element for vertical line */
+.course-vertical-line {
+    position: absolute;
+    left: 10px; 
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: linear-gradient(to bottom, rgba(51, 51, 51, 0.2), #333); /* Faded to dark gradient */
+    transition: height 1s; 
+}
+
+/* Circle point */
+/* .course-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #333;
+    margin-right: 10px;
+    position: absolute;
+    left: -25px; 
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 0.3s; 
+} */
