@@ -369,3 +369,144 @@ body {
   }
   
 
+
+  
+
+  @keyframes animatedShadow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        box-shadow: 0 15px 10px -15px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+}
+
+.animated-shadow {
+    animation: animatedShadow 1.5s infinite;
+}
+
+
+/*counter start*/
+#section-counter {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/*counter end*/
+
+
+
+
+/*FAQ*/
+.accordion .card {
+    background: none;
+    border: none;
+}
+
+.accordion .card .card-header {
+    background: none;
+    border: none;
+    padding: .4rem 1rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.accordion .card-header h2 span {
+    float: left;
+    margin-top: 10px;
+}
+
+.accordion .card-header .btn {
+    color: #2f2f31;
+    font-size: 1.04rem;
+    text-align: left;
+    position: relative;
+    font-weight: 500;
+    padding-left: 2rem;
+}
+
+.accordion .card-header i {
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 9px;
+}
+
+.accordion .card-header .btn:hover {
+    color: #ff8300;
+}
+
+.accordion .card-body {
+    color: #324353;
+    padding: 0.5rem 3rem;
+}
+
+.page-title {
+    margin: 3rem 0 3rem 1rem;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+}
+
+.page-title::after {
+    content: "";
+    width: 80px;
+    position: absolute;
+    height: 3px;
+    border-radius: 1px;
+    background: #73bb2b;
+    left: 0;
+    bottom: -15px;
+}
+
+.accordion .highlight .btn {
+    color: #74bd30;
+}
+
+.accordion .highlight i {
+}
+/*FAQ*/
+
+/*Placed Student*/
+/* Define a keyframe for fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the team-item class */
+.team-item {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Optionally, you can add delay to each item for a staggered effect */
+.col-lg-4:nth-child(1) .team-item { animation-delay: 0.1s; }
+.col-lg-4:nth-child(2) .team-item { animation-delay: 0.3s; }
+.col-lg-4:nth-child(3) .team-item { animation-delay: 0.6s; }
+.col-lg-4:nth-child(4) .team-item { animation-delay: 0.1s; }
+.col-lg-4:nth-child(5) .team-item { animation-delay: 0.3s; }
+.col-lg-4:nth-child(6) .team-item { animation-delay: 0.6s; }
+.col-lg-4:nth-child(7) .team-item { animation-delay: 0.1s; }
+.col-lg-4:nth-child(8) .team-item { animation-delay: 0.3s; }
+.col-lg-4:nth-child(9) .team-item { animation-delay: 0.6s; }
+
+/*Placed Student*/
