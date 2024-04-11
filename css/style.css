@@ -396,6 +396,11 @@ body {
 	animation: gradient 5s ease infinite;
 }
 
+/* SYLLABUS + ICON START */
+ .course-accordion-item:hover .course-toggle-btn {
+         transform: rotate(45deg); /* Rotate the button 180 degrees on hover */
+                    }
+/* SYLLABUS + ICON END */
 
 @keyframes gradient {
 	0% {
@@ -409,7 +414,6 @@ body {
 	}
 }
 /*counter end*/
-
 
 
 
