@@ -192,6 +192,12 @@ h6,
     background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, .85)), url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
+/* cource banner image */
+.hero-headerbanner {
+    background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, .85)), url(../img/cource\ banner.jpg) center center no-repeat;
+    background-size: cover;
+}
+/* cource banner image */
 
 .bg-appointment {
     background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, .85)), url(../img/carousel-1.jpg) center center no-repeat;
