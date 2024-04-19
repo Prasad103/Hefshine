@@ -348,11 +348,12 @@ h6,
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
-    background: var(--primary);
-    border-radius: 2px;
+    color: #ffffff;
+    background-color: #106ed2;
+    border-radius: 60px;
     font-size: 22px;
     transition: .5s;
+    border: 2PX SOLID white;
 }
 
 .testimonial-carousel-slider .owl-nav .owl-prev:hover,
@@ -366,7 +367,7 @@ h6,
     height: 250px;
 }
 
-/* studen says slider end */
+/* --------- studen says slider end ---------------*/
 
 
 /* Global Styles */
