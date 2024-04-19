@@ -323,8 +323,50 @@ h6,
     height: 120px;
 }
 
+/* student says slider  */
+.testimonial-carousel-slider {
+    /* Remove background color */
+    background: transparent;
+}
 
+.testimonial-carousel-slider .owl-nav {
+    position: absolute;
+    width: calc(100% + 46px);
+    height: 46px;
+    top: calc(50% - 23px);
+    left: -23px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
 
+.testimonial-carousel-slider .owl-nav .owl-prev,
+.testimonial-carousel-slider .owl-nav .owl-next {
+    position: relative;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: var(--primary);
+    border-radius: 2px;
+    font-size: 22px;
+    transition: .5s;
+}
+
+.testimonial-carousel-slider .owl-nav .owl-prev:hover,
+.testimonial-carousel-slider .owl-nav .owl-next:hover {
+    background: var(--secondary);
+}
+
+/* Adjust image size */
+.testimonial-carousel-slider .owl-item img {
+    width: 200px;
+    height: 250px;
+}
+
+/* studen says slider end */
 
 
 /* Global Styles */
