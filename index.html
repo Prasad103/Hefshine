@@ -155,7 +155,7 @@
                             <h1 class="display-1 text-primary mb-md-4 animated zoomIn" style="color: white !important;">
                                 HefShine Softwares</h1>
                             <a href="./Cources.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
-                                style="border-radius: 20px;">Cources</a>
+                                style="border-radius: 20px;">Course</a>
                             <a href="./contact.html" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight"
                                 style="border-radius: 20px;">Contact Us</a>
                         </div>
@@ -183,9 +183,8 @@
 
                         <li class="text-white" style="list-style-type:none; "><b>1) One Live Project</b></li>
                         <li class="text-white" style="list-style-type:none; "><b>2) Server Side:</b> Spring Boot,
-                            REST API, Core Java</li>
-                        <li class="text-white" style="list-style-type:none;"><b>3) Database:</b> JPA, Hibernate,
-                            JDBC, SQL, MySQL</li>
+                            REST API, Core Java, JPA, Hibernates</li>
+                        <li class="text-white" style="list-style-type:none;"><b>3) Database:</b> SQL, MySQL</li>
                         <li class="text-white" style="list-style-type:none;"><b>4) Frontend:</b> Angular,
                             TypeScript, HTML, CSS</li>
                         <li class="text-white" style="list-style-type:none;"><b>5) IDE:</b> Eclipse, NetBeans,
@@ -217,7 +216,7 @@
                 <div class="col-lg-4 wow fadeInUp mb-3" data-wow-delay="0.2s" >
                     <div class="bg-secondary d-flex flex-column p-2 text-center text-white"
                         style="height: 320px; border-radius: 10px;" id="section-counter">
-                        <h3 class="text-white mb-3">Fees Structure</h3>
+                        <h3 class="text-white mb-1">Fees Structure</h3>
                         <table>
                             <tr>
                                 <th></th>
@@ -240,6 +239,7 @@
                                 <td>Any Bank Transfer Mode</td>
                             </tr>
                         </table>
+                        <h6 class="text-white">Dynamic Fee Structure: Fees Vary on a Monthaly or Batch Basis</h6>
                     </div>
                 </div>
 
@@ -917,13 +917,45 @@
                 <!-- Back to Top -->
                 <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i
                         class="bi bi-arrow-up"></i></a>
+                
                 <!-- WhatsApp button -->
-                <a href="https://wa.me/9112644549"
-                    style="position: fixed; bottom: 30px; right: 40px; margin-bottom: 70px; z-index: 1000; background-color: #bc9673; color: #fff; border: none; border-radius: 50%; width: 60px; height: 60px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); cursor: pointer; transition: transform 0.3s ease;"
-                    class="whatsapp-btn" onmouseover="this.style.transform='rotate(360deg)';"
-                    onmouseout="this.style.transform='rotate(0deg)'">
-                    <i class="bi bi-whatsapp" style="font-size: 28px; line-height: 60px;"></i>
-                </a>
+                <div style="position: fixed; bottom: 90px; right: 30px; z-index: 1000;">
+                    <a href="javascript:void(0)"
+                        onclick="toggleWhatsAppNumbers()"
+                        style="display: block; margin-bottom: 10px; background-color: #bc9673; color: #fff; border: none; border-radius: 50%; width: 60px; height: 60px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); cursor: pointer; transition: transform 0.3s ease; float: right;"
+                        class="whatsapp-btn" onmouseover="this.style.transform='rotate(360deg)';" onmouseout="this.style.transform='rotate(0deg)'">
+                        <i class="bi bi-whatsapp" style="font-size: 28px; line-height: 60px;"></i>
+                    </a>
+                    <div id="whatsappNumbers" style="display: none;">
+                        <a href="https://wa.me/9112644549" class="whatsapp-number" style="display: block; background-color: #bc9673; color: #fff; border: none; border-radius: 50%; width: 60px; height: 60px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); cursor: pointer; transition: transform 0.3s ease; margin-bottom: 10px;">
+                            <span class="sr-only">9112644549</span>
+                            <i class="bi bi-whatsapp" style="font-size: 28px; line-height: 60px;"></i>
+                        </a>
+                        <a href="https://wa.me/918600198228" class="whatsapp-number" style="display: block; background-color: #bc9673; color: #fff; border: none; border-radius: 50%; width: 60px; height: 60px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); cursor: pointer; transition: transform 0.3s ease; margin-bottom: 10px;">
+                            <span class="sr-only">918600198228</span>
+                            <i class="bi bi-whatsapp" style="font-size: 28px; line-height: 60px;"></i>
+                        </a>
+                        <a href="https://wa.me/917219786722" class="whatsapp-number" style="display: block; background-color: #bc9673; color: #fff; border: none; border-radius: 50%; width: 60px; height: 60px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); cursor: pointer; transition: transform 0.3s ease; margin-bottom: 10px;">
+                            <span class="sr-only">917219786722</span>
+                            <i class="bi bi-whatsapp" style="font-size: 28px; line-height: 60px;"></i>
+                        </a>
+                        <a href="https://wa.me/917219786570" class="whatsapp-number" style="display: block; background-color: #bc9673; color: #fff; border: none; border-radius: 50%; width: 60px; height: 60px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); cursor: pointer; transition: transform 0.3s ease; margin-bottom: 10px;">
+                            <span class="sr-only">917219786570</span>
+                            <i class="bi bi-whatsapp" style="font-size: 28px; line-height: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <script>
+                    function toggleWhatsAppNumbers() {
+                        var numbers = document.getElementById('whatsappNumbers');
+                        if (numbers.style.display === 'block') {
+                            numbers.style.display = 'none';
+                        } else {
+                            numbers.style.display = 'block';
+                        }
+                    }
+                </script>
 
                 <!-- JavaScript Libraries -->
                 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
