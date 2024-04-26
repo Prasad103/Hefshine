@@ -264,16 +264,32 @@
 
                 <!--BANNER END-->
 
-
+                <style>
+                    .number-container {
+                        position: relative;
+                        display: inline-block;
+                    }
+                
+                    .plus-sign {
+                        position: absolute;
+                        top: 50%;
+                        left: calc(100% + 5px);
+                        transform: translateY(-50%);
+                        color: white;
+                        font-size: 40px; /* Adjust the font size as needed */
+                    }
+                </style>
+                
                 <!--Number Counter Start-->
-                <div class="container-fluid" style="width: 100%;" >
+                <div class="container-fluid" style="width: 100%;">
                     <section class="ftco-counter shadow-lg p-3 mb-5 bg-white rounded" id="section-counter">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
                                     <div class="block-18 text-center">
-                                        <div class="text">
-                                            <strong class="number text-white" data-number="1000">0</strong>
+                                        <div class="text number-container">
+                                            <strong class="number text-white" data-number="1050">0</strong>
+                                            <span class="plus-sign">+</span>
                                         </div>
                                         <div class="text text-white">
                                             <span>Placed student</span>
@@ -282,8 +298,9 @@
                                 </div>
                                 <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
                                     <div class="block-18 text-center">
-                                        <div class="text">
-                                            <strong class="number text-white" data-number="27">0</strong>
+                                        <div class="text number-container">
+                                            <strong class="number text-white" data-number="30">0</strong>
+                                            <span class="plus-sign">+</span>
                                         </div>
                                         <div class="text text-white">
                                             <span>Total Batches Done</span>
@@ -292,8 +309,9 @@
                                 </div>
                                 <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
                                     <div class="block-18 text-center">
-                                        <div class="text">
+                                        <div class="text number-container">
                                             <strong class="number text-white" data-number="2251">0</strong>
+                                            <span class="plus-sign">+</span>
                                         </div>
                                         <div class="text text-white">
                                             <span>Total student</span>
@@ -302,11 +320,12 @@
                                 </div>
                                 <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
                                     <div class="block-18 text-center">
-                                        <div class="text">
-                                            <strong class="number text-white" data-number="5.5">0</strong>
+                                        <div class="text number-container">
+                                            <strong class="number text-white" data-number="6">0</strong>
+                                            <span class="plus-sign">+</span>
                                         </div>
                                         <div class="text text-white">
-                                            <span>Year Complited</span>
+                                            <span>Year Completed</span>
                                         </div>
                                     </div>
                                 </div>
@@ -315,38 +334,38 @@
                     </section>
                 </div>
                 <script>
-
                     document.addEventListener('DOMContentLoaded', function () {
                         const counters = document.querySelectorAll('.number');
-
+                
                         // Create an Intersection Observer instance
                         const observer = new IntersectionObserver(entries => {
                             entries.forEach(entry => {
                                 if (entry.isIntersecting) { // Check if the section is in view
                                     const target = +entry.target.querySelector('.number').getAttribute('data-number');
+                                    const numberElement = entry.target.querySelector('.number');
                                     const updateCount = () => {
-                                        const currentCount = +entry.target.querySelector('.number').innerText;
-                                        const increment = target / 100; // Adjust the increment speed as needed
+                                        const currentCount = +numberElement.innerText;
+                                        const increment = Math.ceil(target / 100); // Adjust the increment speed as needed
                                         if (currentCount < target) {
-                                            entry.target.querySelector('.number').innerText = Math.ceil(currentCount + increment);
+                                            numberElement.innerText = Math.min(Math.ceil(currentCount + increment), target);
                                             setTimeout(updateCount, 50); // Adjust the interval as needed
                                         } else {
-                                            entry.target.querySelector('.number').innerText = target;
+                                            numberElement.innerText = target;
                                         }
                                     };
                                     updateCount();
                                 }
                             });
                         }, { threshold: 0.5 }); // Trigger when 50% of the section is in view
-
+                
                         // Observe each counter section
                         counters.forEach(counter => {
-                            observer.observe(counter.closest('.col-md-6'));
+                            observer.observe(counter.closest('.counter-wrap'));
                         });
                     });
                 </script>
-
-                <!--Number Counter Start-->
+                <!--Number Counter End-->
+                
 
 
                 <!--Course Curriculam  start  -->
