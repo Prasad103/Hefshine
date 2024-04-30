@@ -185,27 +185,28 @@
 
                 </div>
                 <div class="col-xl-6 col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                    <form>
+                    <form action="contact_form_handler.php" method="post">
                         <div class="row g-3">
                             <div class="col-12">
-                                <input type="text" class="form-control px-4" placeholder="Your Name"
+                                <input type="text" class="form-control px-4" placeholder="Your Name" name="name"
+                                    id="name"
                                     style="height: 55px; background-color: transparent; border: 1px solid #000; border-radius: 20px;">
                             </div>
                             <div class="col-12">
-                                <input type="email" class="form-control px-4" placeholder="Your Email"
-                                    style="height: 55px; border: 1px solid #000; border-radius: 20px;">
+                                <input type="email" class="form-control px-4" placeholder="Your Email" name="email"
+                                    id="email" style="height: 55px; border: 1px solid #000; border-radius: 20px;">
                             </div>
                             <div class="col-12">
                                 <input type="number" class="form-control px-4" placeholder="Number"
                                     style="height: 55px; border: 1px solid #000; border-radius: 20px;">
                             </div>
                             <div class="col-12">
-                                <input type="text" class="form-control px-4" placeholder="Subject"
-                                    style="height: 55px; border: 1px solid #000; border-radius: 20px;">
+                                <input type="text" class="form-control px-4" placeholder="Subject" name="subject"
+                                    id="subject" style="height: 55px; border: 1px solid #000; border-radius: 20px;">
                             </div>
                             <div class="col-12">
-                                <textarea class="form-control px-4 py-3" rows="5" placeholder="Message"
-                                    style="border: 1px solid #000; border-radius: 20px;"></textarea>
+                                <textarea class="form-control px-4 py-3" rows="5" placeholder="Message" name="message"
+                                    id="message" style="border: 1px solid #000; border-radius: 20px;"></textarea>
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-primary w-100 py-3" type="submit"
