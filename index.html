@@ -63,6 +63,76 @@
             border: none;
             /* Hide the border */
         }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Add spacing between rows */
+        tr:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .number-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .plus-sign {
+            position: absolute;
+            top: 50%;
+            left: calc(100% + 5px);
+            transform: translateY(-50%);
+            color: white;
+            font-size: 40px;
+            /* Adjust the font size as needed */
+        }
+
+        /* syllabus start */
+        .course-accordion-item:hover {
+            border-color: rgb(14, 14, 16);
+        }
+
+        .course-accordion-item:hover .course-accordion-content {
+            display: block;
+        }
+
+        @media (max-width: 767px) {
+
+            /* Apply styles only for screens smaller than 768px */
+            .course-accordion-item {
+                margin-left: 0 !important;
+                /* Remove left margin */
+                margin-top: 15px;
+            }
+        }
+
+        /* syllabus end */
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Add spacing between rows */
+        tr:not(:last-child) {
+            margin-bottom: 10px;
+        }
     </style>
 
 </head>
@@ -164,7 +234,7 @@
             <div class="row gx-4">
                 <div class="col-lg-12 wow fadeInUp mb-3" data-wow-delay="0.2s" style="margin-top: 50px;">
                     <div class="bg-dark d-flex flex-column p-4" style="height: 80px; border-radius: 10px;">
-                        <h3 class="mb-4 text-center text-white">Java FullStack Development</h3>
+                        <h3 class="mb-4 text-center text-white">Java Fullstack Development with Automation Testing</h3>
                     </div>
                 </div>
 
@@ -172,7 +242,7 @@
                     <div class="bg-secondary d-flex flex-column p-4" style="height: 320px; border-radius: 10px;"
                         id="section-counter">
                         <h3 class="text-white mb-3 text-center">Technologies Covered</h3>
-                        
+
                         <li class="text-white" style="list-style-type:none; "><b>1) One Live Project</b></li>
                         <li class="text-white" style="list-style-type:none; "><b>2) Server Side:</b> Spring Boot,
                             REST API, Core Java, JPA, Hibernates</li>
@@ -187,7 +257,7 @@
                         </li>
                     </div>
                 </div>
-                <div class="col-lg-4 wow fadeInUp mb-3" data-wow-delay="0.4s">
+                <div class="col-lg-3 wow fadeInUp mb-3" data-wow-delay="0.4s">
                     <div class="bg-secondary d-flex flex-column p-4 text-center"
                         style="height: 320px; border-radius: 10px;">
                         <h3 class="text-white mb-3">Placement Support</h3>
@@ -202,7 +272,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 wow fadeInUp mb-3" data-wow-delay="0.2s">
+                <div class="col-lg-5 wow fadeInUp mb-3" data-wow-delay="0.2s">
                     <div class="bg-secondary d-flex flex-column p-2 text-center text-white"
                         style="height: 320px; border-radius: 10px;" id="section-counter">
                         <h3 class="text-white mb-1">Fees Structure</h3>
@@ -211,64 +281,33 @@
                                 <th></th>
                                 <th>Option 1</th>
                                 <th>Option 2</th>
+                                <th>Option 3</th>
                             </tr>
                             <tr>
                                 <td>Registration (while admission)</td>
+                                <td>Rs. 5,000</td>
                                 <td>Rs. 15,000</td>
                                 <td>Rs. 35,000</td>
                             </tr>
                             <tr>
                                 <td>After Placement</td>
-                                <td>Rs. 40,000</td>
+                                <td>Rs. 65,000</td>
+                                <td>Rs. 40000</td>
                                 <td>Rs. 0</td>
                             </tr>
                             <tr>
                                 <td>Mode of Payment</td>
-                                <td>Student Cheque Only</td>
+                                <td>Any Bank Transfer Mode</td>
+                                <td>Any Bank Transfer Mode</td>
                                 <td>Any Bank Transfer Mode</td>
                             </tr>
                         </table>
-                        <h6 class="text-white">Dynamic Fee Structure: Fees Vary on a Monthaly or Batch Basis</h6>
+                        <h6 class="text-white" style="margin-top: 10px;">Dynamic Fee Structure: Fees Vary on a Monthaly
+                            or Batch Basis</h6>
                     </div>
                 </div>
 
-                <style>
-                    table {
-                        border-collapse: collapse;
-                        width: 100%;
-                    }
-
-                    th,
-                    td {
-                        border: 1px solid #ddd;
-                        padding: 8px;
-                        text-align: left;
-                    }
-
-                    /* Add spacing between rows */
-                    tr:not(:last-child) {
-                        margin-bottom: 10px;
-                    }
-                </style>
-
                 <!--BANNER END-->
-
-                <style>
-                    .number-container {
-                        position: relative;
-                        display: inline-block;
-                    }
-
-                    .plus-sign {
-                        position: absolute;
-                        top: 50%;
-                        left: calc(100% + 5px);
-                        transform: translateY(-50%);
-                        color: white;
-                        font-size: 40px;
-                        /* Adjust the font size as needed */
-                    }
-                </style>
 
                 <!--Number Counter Start-->
                 <div class="container-fluid" style="width: 100%;">
@@ -356,8 +395,6 @@
                 </script>
                 <!--Number Counter End-->
 
-
-
                 <!--Course Curriculam  start  -->
                 <div class="container">
                     <div class="row">
@@ -366,7 +403,7 @@
                                 <div class="section-title bg-light rounded  p-5" id="section-counter">
                                     <h5 class="position-relative d-inline-block text-white text-uppercase">Cource
                                         Curriculum</h5>
-                                    <h1 class="display-6 mb-4">Java FullStack Development</h1>
+                                    <h1 class="display-6 mb-4">Java Fullstack Development with Automation Testing</h1>
                                     <a href="./contact.html" class="btn  py-3 px-5"
                                         style="border-radius: 20px; border: 1px solid white;">Contact us</a>
                                 </div>
@@ -375,7 +412,6 @@
                         <!-- SYLLABUS START -->
                         <div class="col-md-8">
                             <div class="course-accordion">
-
                                 <style>
                                     .course-accordion-item:hover {
                                         border-color: rgb(14, 14, 16);
@@ -549,12 +585,238 @@
                                         Download
                                     </a>
                                 </div>
-
                             </div>
                         </div>
                         <!-- SYLLABUS END -->
                     </div>
                 </div>
+                <!-- pythin course start -->
+                <div class="col-lg-12 wow fadeInUp mb-3" data-wow-delay="0.2s" style="margin-top: 50px;">
+                    <div class="bg-dark d-flex flex-column p-4" style="height: 80px; border-radius: 10px;">
+                        <h4 class="mb-4 text-center text-white">Full Stack Development with Python, Django, MySQL,
+                            React, Data Science, Machine Learning, PowerBI, Deep Learning & Cloud Computing (Azure)
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 wow fadeInUp mb-3" data-wow-delay="0.2s">
+                    <div class="bg-secondary d-flex flex-column p-4" style="height: 320px; border-radius: 10px;"
+                        id="section-counter">
+                        <h3 class="text-white mb-3 text-center">Technologies Covered</h3>
+
+                        <li class="text-white" style="list-style-type:none; "><b>1) One Live Project</b></li>
+                        <li class="text-white" style="list-style-type:none; "><b>2) Server Side:</b> Python, Django,
+                            Django Rest Framework (DRF), REST API</li>
+                        <li class="text-white" style="list-style-type:none;"><b>3) Database:</b> MySQL, SQL</li>
+                        <li class="text-white" style="list-style-type:none;"><b>4) Frontend:</b> React, JSX, Redux,
+                            HTML, CSS</li>
+                        <li class="text-white" style="list-style-type:none;"><b>5) IDE:</b>PyCharm, Visual Studio Code
+                            (VS Code), Jupyter Notebook</li>
+                        <li class="text-white" style="list-style-type:none;"><b>6) Tools:</b>Git, GitHub, Postman,
+                            PowerBI, Azure Cloud (VMs, Storage, Databases)</li>
+                        <li class="text-white" style="list-style-type:none;"><b>7) Other:</b> Soft Skills, Aptitude,
+                            Resume Building, Interview Preparation
+                        </li>
+                    </div>
+                </div>
+                <div class="col-lg-3 wow fadeInUp mb-3" data-wow-delay="0.4s">
+                    <div class="bg-secondary d-flex flex-column p-4 text-center"
+                        style="height: 320px; border-radius: 10px;">
+                        <h3 class="text-white mb-3">Placement Support</h3>
+                        <p class="text-white">Unlimited placement assistance<br>3 years post-placement support</p>
+                        <br>
+
+                        <h3 class="text-white mb-3">Duration</h3>
+                        <p class="text-white">6 months,
+                            Monday to Saturday,
+                            7am to 5pm
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 wow fadeInUp mb-3" data-wow-delay="0.2s">
+                    <div class="bg-secondary d-flex flex-column p-2 text-center text-white"
+                        style="height: 320px; border-radius: 10px;" id="section-counter">
+                        <h3 class="text-white mb-1">Fees Structure</h3>
+                        <table>
+                            <tr>
+                                <th></th>
+                                <th>Option 1</th>
+                                <th>Option 2</th>
+                                <th>Option 3</th>
+                            </tr>
+                            <tr>
+                                <td>Registration (while admission)</td>
+                                <td>Rs. 5,000</td>
+                                <td>Rs. 15,000</td>
+                                <td>Rs. 35,000</td>
+                            </tr>
+                            <tr>
+                                <td>After Placement</td>
+                                <td>Rs. 65,000</td>
+                                <td>Rs. 40000</td>
+                                <td>Rs. 0</td>
+                            </tr>
+                            <tr>
+                                <td>Mode of Payment</td>
+                                <td>Any Bank Transfer Mode</td>
+                                <td>Any Bank Transfer Mode</td>
+                                <td>Any Bank Transfer Mode</td>
+                            </tr>
+                        </table>
+                        <h6 class="text-white" style="margin-top: 10px;">Dynamic Fee Structure: Fees Vary on a Monthaly
+                            or Batch Basis</h6>
+                    </div>
+                </div>
+
+                <!--BANNER END-->
+                <!--Course Curriculam  start  -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="course-container shadow-lg rounded" style="height: 530px;">
+                                <div class="section-title bg-light rounded  p-5" id="section-counter">
+                                    <h5 class="position-relative d-inline-block text-white text-uppercase">Cource
+                                        Curriculum</h5>
+                                    <h3 class=" mb-4">Full Stack Development with Python, Django, MySQL, React,
+                                        Data Science, Machine Learning, PowerBI, Deep Learning & Cloud Computing (Azure)
+                                    </h3>
+                                    <a href="./contact.html" class="btn  py-3 px-5"
+                                        style="border-radius: 20px; border: 1px solid white;">Contact us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SYLLABUS START -->
+                        <div class="col-md-8">
+                            <!-- Course Content -->
+                            <div class="course-accordion-item border border-dark border-bottom-0"
+                                style="margin-left: 50px; margin-bottom: 10px; border: 1px solid black;">
+                                <input type="checkbox" id="chapter1">
+                                <label for="chapter1" class="course-chapter-title">
+                                    <span class="course-circle"></span> <!-- Circle point -->
+                                    Chapter 1: Introduction to Programming with Python
+                                    <button class="course-toggle-btn">+</button>
+                                </label>
+                                <div class="course-accordion-content">
+                                    <ul class="course-subpoints">
+                                        <li>Python Basics: Data types, variables, operators, control structures</li>
+                                        <li>Functions and Modules in Python</li>
+                                        <li>Object-Oriented Programming (OOP) in Python</li>
+                                        <li>File Handling</li>
+                                        <li>Error Handling and Exception Management</li>
+                                        <li>Hands-on Projects: Python mini-projects</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="course-accordion-item border border-dark border-bottom-0"
+                                style="margin-left: 50px; margin-bottom: 10px; border: 1px solid black;">
+                                <input type="checkbox" id="chapter2">
+                                <label for="chapter2" class="course-chapter-title">
+                                    <span class="course-circle"></span> <!-- Circle point -->
+                                    Chapter 2: Web Development with Django
+                                    <button class="course-toggle-btn">+</button>
+                                </label>
+                                <div class="course-accordion-content">
+                                    <ul class="course-subpoints">
+                                        <li>Introduction to Django Framework</li>
+                                        <li>Setting up Django Environment</li>
+                                        <li>Django Models, Views, and Templates</li>
+                                        <li>URL Routing and Handling HTTP Requests</li>
+                                        <li>Forms and Data Validation</li>
+                                        <li>Django Admin Panel and Authentication</li>
+                                        <li>Hands-on Projects: Build a blog or to-do app</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="course-accordion-item border border-dark border-bottom-0"
+                                style="margin-left: 50px; margin-bottom: 10px; border: 1px solid black;">
+                                <input type="checkbox" id="chapter3">
+                                <label for="chapter3" class="course-chapter-title">
+                                    <span class="course-circle"></span> <!-- Circle point -->
+                                    Chapter 3: Databases with MySQL
+                                    <button class="course-toggle-btn">+</button>
+                                </label>
+                                <div class="course-accordion-content">
+                                    <ul class="course-subpoints">
+                                        <li>Introduction to Relational Databases</li>
+                                        <li>Setting up MySQL with Django</li>
+                                        <li>Database Models and SQL Queries</li>
+                                        <li>Normalization and Relationships</li>
+                                        <li>Optimizing Queries</li>
+                                        <li>Hands-on Projects: Database-backed applications</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="course-accordion-item border border-dark border-bottom-0"
+                                style="margin-left: 50px; margin-bottom: 10px; border: 1px solid black;">
+                                <input type="checkbox" id="chapter4">
+                                <label for="chapter4" class="course-chapter-title">
+                                    <span class="course-circle"></span> <!-- Circle point -->
+                                    Chapter 4: Frontend Development with React
+                                    <button class="course-toggle-btn">+</button>
+                                </label>
+                                <div class="course-accordion-content">
+                                    <ul class="course-subpoints">
+                                        <li>React Basics: Components, JSX, Virtual DOM</li>
+                                        <li>State and Props Management</li>
+                                        <li>React Router and Navigation</li>
+                                        <li>Fetching Data from APIs</li>
+                                        <li>State Management with Redux</li>
+                                        <li>Hands-on Projects: Build UI for Django app</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="course-accordion-item border border-dark border-bottom-0"
+                                style="margin-left: 50px; margin-bottom: 10px; border: 1px solid black;">
+                                <input type="checkbox" id="chapter5">
+                                <label for="chapter5" class="course-chapter-title">
+                                    <span class="course-circle"></span> <!-- Circle point -->
+                                    Chapter 5: Data Science and Machine Learning
+                                    <button class="course-toggle-btn">+</button>
+                                </label>
+                                <div class="course-accordion-content">
+                                    <ul class="course-subpoints">
+                                        <li>Introduction to Data Science</li>
+                                        <li>Data Preprocessing and Cleaning</li>
+                                        <li>Exploratory Data Analysis (EDA)</li>
+                                        <li>Machine Learning Models with Scikit-Learn</li>
+                                        <li>Hands-on Projects: Predictive Models</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="course-accordion-item border border-dark"
+                                style="margin-left: 50px; margin-bottom: 10px; border: 1px solid black;">
+                                <input type="checkbox" id="chapter6">
+                                <label for="chapter6" class="course-chapter-title">
+                                    <span class="course-circle"></span> <!-- Circle point -->
+                                    Project
+                                    <button class="course-toggle-btn">+</button>
+                                </label>
+                                <div class="course-accordion-content">
+                                    <ul class="course-subpoints">
+                                        <li>Develop an end-to-end Full Stack Application</li>
+                                        <li>Deploy on Cloud Platform</li>
+                                        <li>Resume and Interview Preparation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <a href="/Syallabus27Mar2024.pdf" download class="btn btn-primary wow zoomIn"
+                                    data-wow-delay="0.6s"
+                                    style="width: 200px; border-radius: 30px;background-color: #06BBCC;">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                        <!-- SYLLABUS END -->
+                    </div>
+                </div>
+                <!-- pythin course end -->
                 <script src="./js/cource.js"></script>
 
                 <!--Course Curriculam end -->
